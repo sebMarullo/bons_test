@@ -1,0 +1,170 @@
+#related_videos{
+    background-color:#F6F6F6;
+    h4 {
+        color:$title;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 0;
+        margin-bottom:40px;
+    }
+    .row {
+        article .warpper_article{            
+            min-height:295px;
+            margin-bottom:15px;
+            background-repeat:no-repeat;
+            color:#fff;
+            padding:15px;
+            position: relative;
+            background-size:cover;
+            display: flex;
+            overflow: hidden;
+            flex-wrap: wrap;
+            &:before{
+                content: ' ';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                opacity: 0.5;
+                background-color:#000;
+                transition:opacity 0.5s linear
+            }
+            @media(min-width:1024px){
+                background-size:inherit
+            }
+            > span {
+                background-color:$red;
+                border-radius: 50px;
+                max-height:18px;
+                font-weight:bold;
+                font-size:12px;
+                line-height:16px;
+                padding: 1px 7px;
+                margin-left: auto;
+            }
+            .title_card{
+                font-size:14px;
+                line-height:16px;  
+                margin-left:7px;
+                flex-basis: 100%;
+                margin-top: auto;
+                display:flex;
+                padding-top: 20%;
+                span:last-child {
+                    display:none;
+                    background-color:#000;
+                    font-size: 12px;	
+                    line-height: 12px;	
+                    text-align: center;
+                    color:#fff;
+                    padding: 2px;
+                    margin-bottom: auto;
+                    margin-left: auto;
+                }
+                i{
+                    display:inline-block;
+                    margin-right: 8px;
+                }
+            }
+            .mask {
+                display:flex;
+                background-color:#fff; 
+                position:absolute;
+                left:0;
+                width:100%;
+                flex-wrap: wrap;
+                height:0; 
+                max-height: 0;
+                overflow: hidden;
+                transition:all 0.5s ease-out;
+                padding:18px;
+                bottom:-99px;
+                img {
+                    border-radius:100%;
+                    margin-right: 12px;
+                    padding-top: 5px;
+                }
+                h5{
+                    color:$title;
+                    font-size:16px;
+                    line-height:24px;
+                    font-weight:bold; 
+                    margin:0; 
+                }
+                p{
+                    color:$text_card;
+                    margin: 0;
+                    font-size: 14px;
+                    flex-basis: 100%;
+                    margin-top: -12px;
+                    padding-left: 45px;
+                }
+            }
+            &:hover {
+                &:before{
+                    opacity:0;
+                }
+                .mask {
+                    max-height: 500px;
+                    transition: all 0.5s ease-in;
+                    height: auto;
+                    bottom:0;
+                }
+                .title_card{                     
+                    margin-top: inherit;
+                    span:last-child {
+                        display:inline-block;;
+                    }
+                }
+            }
+        }
+        &.one_row {
+            article {
+                &:nth-child(1) .warpper_article{
+                    background-image:url(../images/card01.png)
+                }
+                &:nth-child(2) .warpper_article{
+                    background-image:url(../images/card02.png)
+                }
+                &:nth-child(3) .warpper_article{
+                    background-image:url(../images/card03.png)
+                }
+            }
+        }
+        &.two_row {
+            article {
+                &:nth-child(1) .warpper_article{
+                    background-image:url(../images/card04.png)
+                }
+                &:nth-child(2) .warpper_article{
+                    background-image:url(../images/card05.png)
+                }
+                &:nth-child(3) .warpper_article{
+                    background-image:url(../images/card06.png) 
+                }
+            }
+        }
+        &.three_row {
+            text-align:center;
+            margin-top:50px;
+            padding-bottom:90px;
+            a{
+                font-size: 16px;	
+                line-height: 18px;
+                color:$red;
+                text-decoration:none;                
+                i{
+                    display:inline-block;
+                    margin-left: 5px;
+                }
+                &:hover{
+                    opacity:0.8;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+nav {
+    ul {
+        padding:0;
+        display: flex;        
+        flex-wrap: wrap;
+        margin: 30px 0;
+        margin-bottom:0;
+        li{
+            list-style:none; 
+            padding-right:24px;
+            a {
+                font-weight:bold;
+                font-size:14px;
+                line-height:22px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

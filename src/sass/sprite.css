@@ -1,0 +1,108 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ArrowRed {
+  background-image: url(../images/sprite.png);
+  background-position: -184px -69px;
+  width: 6px;
+  height: 12px;
+}
+.icon-ArrowRight--Black {
+  background-image: url(../images/sprite.png);
+  background-position: -156px -109px;
+  width: 14px;
+  height: 25px;
+}
+.icon-Berlin {
+  background-image: url(../images/sprite.png);
+  background-position: -60px -69px;
+  width: 124px;
+  height: 20px;
+}
+.icon-Facebook {
+  background-image: url(../images/sprite.png);
+  background-position: -32px -109px;
+  width: 32px;
+  height: 32px;
+}
+.icon-Flickr {
+  background-image: url(../images/sprite.png);
+  background-position: -64px -109px;
+  width: 32px;
+  height: 32px;
+}
+.icon-Hamburg {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 268px;
+  height: 49px;
+}
+.icon-HeroSlider-ArrowLeft {
+  background-image: url(../images/sprite.png);
+  background-position: -128px -109px;
+  width: 14px;
+  height: 27px;
+}
+.icon-HeroSlider-ArrowRight {
+  background-image: url(../images/sprite.png);
+  background-position: -142px -109px;
+  width: 14px;
+  height: 27px;
+}
+.icon-Ico-Location {
+  background-image: url(../images/sprite.png);
+  background-position: -237px -49px;
+  width: 16px;
+  height: 16px;
+}
+.icon-Munchen {
+  background-image: url(../images/sprite.png);
+  background-position: -60px -49px;
+  width: 160px;
+  height: 20px;
+}
+.icon-PlayBig {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -49px;
+  width: 60px;
+  height: 60px;
+}
+.icon-PlayRed {
+  background-image: url(../images/sprite.png);
+  background-position: -253px -49px;
+  width: 14px;
+  height: 14px;
+}
+.icon-PlaySmall {
+  background-image: url(../images/sprite.png);
+  background-position: -220px -49px;
+  width: 17px;
+  height: 17px;
+}
+.icon-Tumblr {
+  background-image: url(../images/sprite.png);
+  background-position: -96px -109px;
+  width: 32px;
+  height: 32px;
+}
+.icon-Youtube {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -109px;
+  width: 32px;
+  height: 32px;
+}

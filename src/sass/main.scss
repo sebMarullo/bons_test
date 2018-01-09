@@ -1,0 +1,148 @@
+/* Variables */
+
+$font-family: 'Helvetica Neue', Helvetica, sans-serif;
+$red: #FF0000;
+$title:#333333;
+$footer_background:#242424;
+$general_text:#262626;
+$text_card:#999999;
+
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    font-family:$font-family; 
+    background-color:#fff;  
+    padding:0; 
+		margin:0px; 
+
+	section {
+		width:100%;
+	}
+	
+	a:hover{
+		color:$red;
+	}  
+
+	.container {
+	  position: relative;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding-right: 15px;
+		padding-left: 15px;
+		@media(min-width:1024px){
+			padding: 0 !important;
+		}
+	}
+
+	@media (min-width: 576px) {
+	  .container {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+	}
+
+	@media (min-width: 768px) {
+	  .container {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+	}
+
+	@media (min-width: 992px) {
+	  .container {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+	}
+
+	@media (min-width: 1200px) {
+	  .container {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+	}
+
+	@media (min-width: 576px) {
+	  .container {
+	    width: 540px;
+	    max-width: 100%;
+	  }
+	}
+
+	@media (min-width: 768px) {
+	  .container {
+	    width: 720px;
+	    max-width: 100%;
+	  }
+	}
+
+	@media (min-width: 992px) {
+	  .container {
+	    width: 944px;
+	    max-width: 100%;
+	  }
+	}
+
+	@media (min-width: 1200px) {
+	  .container {
+	    width:944px;
+	    max-width: 100%;
+	  }
+	}
+
+	@media (min-width: 1440px) {
+        .container {
+          width:944px;
+          max-width: 100%;
+        }
+    }
+
+	.container-fluid {
+	  position: relative;
+	  margin-left: auto;
+	  margin-right: auto;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	}
+
+	@media (min-width: 576px) {
+	  .container-fluid {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+	}
+
+	@media (min-width: 768px) {
+	  .container-fluid {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+	}
+
+	@media (min-width: 992px) {
+	  .container-fluid {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+	}
+
+	@media (min-width: 1200px) {
+	  .container-fluid {
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+	}
+
+}
+
+main {
+	> section {		
+		padding-top:90px;
+		&:first-child{ 
+			padding-bottom:90px;
+		}
+	}
+}

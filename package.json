@@ -1,0 +1,35 @@
+{
+  "name": "bons_test",
+  "version": "0.1.0",
+  "description": "This is a test for Bons",
+  "main": "Gulpfile.js",
+  "dependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp.spritesmith": "^6.8.0",
+    "jquery": "^3.2.1",
+    "simple-popup-modal": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^2.1.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sprite-generator": "^0.2.3",
+    "gulp-watch-sass": "^1.3.2"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebMarullo/bons_test.git"
+  },
+  "author": "Sebastian Marullo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebMarullo/bons_test/issues"
+  },
+  "homepage": "https://github.com/sebMarullo/bons_test#readme"
+}

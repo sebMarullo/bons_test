@@ -41,6 +41,9 @@
             font-weight: 700;
             margin-bottom: 12px;
             margin-top: 0;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: bounce;
             @media(min-width:1100px){
               margin-top: 70px;
             }
@@ -49,6 +52,9 @@
             font-size: 22px;
             font-weight: bold;
             line-height: 29px;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: bounceInLeft;
             &.icon-ArrowRed {
               margin-left: 6px;
               display: inline-block;
@@ -58,6 +64,9 @@
             font-size: 18px;	
             line-height: 28px;
             color:$red;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: bounceInLeft;
             @media(min-width:1100px){
               margin-top:60px;
             }
@@ -101,6 +110,9 @@
           position: absolute;
           top: 50%;
           right:0;
+          animation-duration: 1s;
+          animation-fill-mode: both;
+          animation-name: bounceInRight;
           @media(min-width:1100px){
             right: -70px;
           }
@@ -196,5 +208,83 @@
         transform: scaleY(1);
         -webkit-transform: scaleY(1);
       }
+    }    
+
+    @keyframes bounceInRight {
+      from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      }
+    
+      from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+      }
+    
+      60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+      }
+    
+      75% {
+        transform: translate3d(10px, 0, 0);
+      }
+    
+      90% {
+        transform: translate3d(-5px, 0, 0);
+      }
+    
+      to {
+        transform: none;
+      }
     }
+
   
+    @keyframes bounce {
+      from, 20%, 53%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0,0,0);
+      }
+    
+      40%, 43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -30px, 0);
+      }
+    
+      70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -15px, 0);
+      }
+    
+      90% {
+        transform: translate3d(0,-4px,0);
+      }
+    }
+
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}

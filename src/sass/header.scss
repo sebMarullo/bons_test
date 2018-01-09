@@ -9,6 +9,9 @@ header {
         h1 {
             text-indent:-99999em;
             margin-bottom:0;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-name: tada; 
         }
     }
     .ted_extra_menu {
@@ -34,3 +37,25 @@ header {
         }
     }
 }
+
+@keyframes tada {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    10%, 20% {
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    30%, 50%, 70%, 90% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    40%, 60%, 80% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
